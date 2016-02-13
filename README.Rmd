@@ -33,7 +33,7 @@ suppressMessages(suppressWarnings(extrafont::font_import(pattern = 'catull.ttf',
 
 palette_airbnb <- c("#FF5A5F", "#FFB400", "#007A87",  "#FFAA91", "#7B0051")
 
-# etsy theme
+# airbnb theme
 theme_airbnb <- function() {
   theme_classic() + 
     theme(text=element_text(size=20, family="Circular Air Medium")) +
