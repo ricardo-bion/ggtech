@@ -1,5 +1,5 @@
 ---
-title: "ggplot2 theme tech"
+title: "ggplot2 tech themes, scales, and geoms"
 output:
   html_document:
     fig_height: 5
@@ -11,19 +11,59 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(dpi=500)
 options(warn=-1)
+library(ggplot2)
 ```
 
 ### Install ggtech:
 
-```{r}
+```{r, eval=FALSE}
 
-library(devtools)
-library(ggplot2)
-library(extrafont)
 
-##install_github("ricardo-bion/ggtech")
+devtools::install_github("ricardo-bion/ggtech", 
+                          dependencies=TRUE)
 
 ```
+
+### Use ggtech
+
+```{r}
+
+library(ggtech)
+
+d <- qplot(carat, data = diamonds[diamonds$color %in%LETTERS[4:7], ], geom = "histogram", bins=30, fill = color)
+
+```
+
+
+```{r}
+d + theme_tech(theme="airbnb") + ggtitle("Airbnb ggplot2 theme") + scale_fill_tech(theme="airbnb")
+```
+
+
+
+```{r}
+d + theme_tech(theme="etsy") + ggtitle("Etsy ggplot2 theme") + scale_fill_tech(theme="etsy")
+```
+
+
+
+```{r}
+d + theme_tech(theme="facebook") + ggtitle("Facebook ggplot2 theme") + scale_fill_tech(theme="facebook")
+```
+
+
+```{r}
+d + theme_tech(theme="google") + ggtitle("Google ggplot2 theme") + scale_fill_tech(theme="google")
+```
+
+
+```{r}
+d + theme_tech(theme="twitter") + ggtitle("Twitter ggplot2 theme") + scale_fill_tech(theme="twitter")
+```
+
+
+
+
 
 ### Install fonts:
 
@@ -66,42 +106,4 @@ download.file("http://social-fonts.com/assets/fonts/arista-light/arista-light.tt
 
 font_import(pattern = 'pico-black.ttf', prompt=FALSE)
 font_import(pattern = 'arista-light.ttf', prompt=FALSE)
-```
-
-### Use ggtech
-
-```{r}
-
-library(ggtech)
-
-
-d <- qplot(carat, data = diamonds[diamonds$color %in%LETTERS[4:7], ], geom = "histogram", bins=30, fill = color)
-
-```
-
-
-```{r}
-d + theme_tech(theme="airbnb") + ggtitle("Airbnb ggplot2 theme") + scale_fill_tech(theme="airbnb")
-```
-
-
-
-```{r}
-d + theme_tech(theme="etsy") + ggtitle("Etsy ggplot2 theme") + scale_fill_tech(theme="etsy")
-```
-
-
-
-```{r}
-d + theme_tech(theme="facebook") + ggtitle("Facebook ggplot2 theme") + scale_fill_tech(theme="facebook")
-```
-
-
-```{r}
-d + theme_tech(theme="google") + ggtitle("Google ggplot2 theme") + scale_fill_tech(theme="google")
-```
-
-
-```{r}
-d + theme_tech(theme="twitter") + ggtitle("Twitter ggplot2 theme") + scale_fill_tech(theme="twitter")
 ```
