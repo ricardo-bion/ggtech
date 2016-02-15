@@ -1,4 +1,4 @@
-# ggplot2 theme tech
+# ggplot2 tech themes, scales, and geoms
 
 
 
@@ -7,18 +7,64 @@
 
 
 ```r
-library(devtools)
-library(ggplot2)
-library(extrafont)
+devtools::install_github("ricardo-bion/ggtech", 
+                          dependencies=TRUE)
 ```
 
-```
-## Registering fonts with R
-```
+### Use ggtech
+
 
 ```r
-##install_github("ricardo-bion/ggtech")
+library(ggtech)
+
+d <- qplot(carat, data = diamonds[diamonds$color %in%LETTERS[4:7], ], geom = "histogram", bins=30, fill = color)
 ```
+
+
+
+```r
+d + theme_tech(theme="airbnb") + ggtitle("Airbnb ggplot2 theme") + scale_fill_tech(theme="airbnb")
+```
+
+![](README_files/figure-html/unnamed-chunk-3-1.png)
+
+
+
+
+```r
+d + theme_tech(theme="etsy") + ggtitle("Etsy ggplot2 theme") + scale_fill_tech(theme="etsy")
+```
+
+![](README_files/figure-html/unnamed-chunk-4-1.png)
+
+
+
+
+```r
+d + theme_tech(theme="facebook") + ggtitle("Facebook ggplot2 theme") + scale_fill_tech(theme="facebook")
+```
+
+![](README_files/figure-html/unnamed-chunk-5-1.png)
+
+
+
+```r
+d + theme_tech(theme="google") + ggtitle("Google ggplot2 theme") + scale_fill_tech(theme="google")
+```
+
+![](README_files/figure-html/unnamed-chunk-6-1.png)
+
+
+
+```r
+d + theme_tech(theme="twitter") + ggtitle("Twitter ggplot2 theme") + scale_fill_tech(theme="twitter")
+```
+
+![](README_files/figure-html/unnamed-chunk-7-1.png)
+
+
+
+
 
 ### Install fonts:
 
@@ -62,55 +108,3 @@ download.file("http://social-fonts.com/assets/fonts/arista-light/arista-light.tt
 font_import(pattern = 'pico-black.ttf', prompt=FALSE)
 font_import(pattern = 'arista-light.ttf', prompt=FALSE)
 ```
-
-### Use ggtech
-
-
-```r
-library(ggtech)
-
-
-d <- qplot(carat, data = diamonds[diamonds$color %in%LETTERS[4:7], ], geom = "histogram", bins=30, fill = color)
-```
-
-
-
-```r
-d + theme_tech(theme="airbnb") + ggtitle("Airbnb ggplot2 theme") + scale_fill_tech(theme="airbnb")
-```
-
-![](README_files/figure-html/unnamed-chunk-4-1.png)
-
-
-
-
-```r
-d + theme_tech(theme="etsy") + ggtitle("Etsy ggplot2 theme") + scale_fill_tech(theme="etsy")
-```
-
-![](README_files/figure-html/unnamed-chunk-5-1.png)
-
-
-
-
-```r
-d + theme_tech(theme="facebook") + ggtitle("Facebook ggplot2 theme") + scale_fill_tech(theme="facebook")
-```
-
-![](README_files/figure-html/unnamed-chunk-6-1.png)
-
-
-
-```r
-d + theme_tech(theme="google") + ggtitle("Google ggplot2 theme") + scale_fill_tech(theme="google")
-```
-
-![](README_files/figure-html/unnamed-chunk-7-1.png)
-
-
-
-```r
-d + theme_tech(theme="twitter") + ggtitle("Twitter ggplot2 theme") + scale_fill_tech(theme="twitter")
-```
-
-![](README_files/figure-html/unnamed-chunk-8-1.png)
