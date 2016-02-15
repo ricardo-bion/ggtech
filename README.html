@@ -70,7 +70,8 @@ img {
                           dependencies=TRUE)</code></pre>
 </div>
 <div id="use-ggtech" class="section level3">
-<h3>Use ggtech</h3>
+<h3>Use ggtech:</h3>
+<p>Make sure to install the required fonts (instructions at the end of this file).</p>
 <pre class="r"><code>library(ggtech)
 
 d &lt;- qplot(carat, data = diamonds[diamonds$color %in%LETTERS[4:7], ], geom = &quot;histogram&quot;, bins=30, fill = color)</code></pre>

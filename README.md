@@ -11,7 +11,9 @@ devtools::install_github("ricardo-bion/ggtech",
                           dependencies=TRUE)
 ```
 
-### Use ggtech
+### Use ggtech:
+
+Make sure to install the required fonts (instructions at the end of this file).
 
 
 ```r
@@ -69,6 +71,7 @@ d + theme_tech(theme="twitter") + ggtitle("Twitter ggplot2 theme") + scale_fill_
 ### Install fonts:
 
 You have to install the necessary fonts manually before using `ggtech`. Mofidy the `destfile` if you are using Windows or Unix.
+
 
 
 ```r
