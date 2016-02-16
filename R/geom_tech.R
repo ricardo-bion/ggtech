@@ -4,6 +4,8 @@
 #'
 #' @export
 
+# most of the code is from emoGG https://github.com/dill/emoGG
+
 techGrob <- function(x, y, size, theme){
 
    geom_key <- list(
