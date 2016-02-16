@@ -23,7 +23,7 @@ techGrob <- function(x, y, size, theme){
               image         = img,
               default.units = "native",
               height        = size,
-              width         = size)
+              width         = size*0.5)
 }
 
 
@@ -40,7 +40,7 @@ GeomTech <- ggplot2::ggproto("GeomTech", ggplot2::Geom,
 
   non_missing_aes = c("size", "theme"),
   required_aes = c("x", "y"),
-  default_aes = ggplot2::aes(size=0.05, theme="airbnb"),
+  default_aes = ggplot2::aes(size=0.2, theme="airbnb"),
 
   icon = function(.){}, # a grob representing the geom for the webpage
 

@@ -80,7 +80,7 @@ d2 <- data.frame(x = c(1:4, 3:1), y=1:7)
 
 ```r
 ggplot(aes(x,y), data=d2) + 
-  geom_tech(size=0.2, theme="airbnb") + 
+  geom_tech(size=0.25, theme="airbnb") + 
   theme_tech("airbnb") +
   ggtitle("Airbnb geom")
 ```
@@ -91,7 +91,7 @@ ggplot(aes(x,y), data=d2) +
 
 ```r
 ggplot(aes(x,y), data=d2) + 
-  geom_tech(size=0.1, theme="etsy") + 
+  geom_tech(size=0.15, theme="etsy") + 
   theme_tech("etsy")+
   ggtitle("Etsy geom")
 ```
@@ -101,7 +101,7 @@ ggplot(aes(x,y), data=d2) +
 
 ```r
 ggplot(aes(x,y), data=d2) + 
-  geom_tech(size=0.1, theme="facebook") + 
+  geom_tech(size=0.15, theme="facebook") + 
   theme_tech("facebook")+
   ggtitle("Facebook geom")
 ```
@@ -112,7 +112,7 @@ ggplot(aes(x,y), data=d2) +
 
 ```r
 ggplot(aes(x,y), data=d2) + 
-  geom_tech(size=0.1, theme="google") + 
+  geom_tech(size=0.25, theme="google") + 
   theme_tech("google" ) +
   ggtitle("Google geom")
 ```
@@ -123,7 +123,7 @@ ggplot(aes(x,y), data=d2) +
 
 ```r
 ggplot(aes(x,y), data=d2) + 
-  geom_tech(size=0.1, theme="twitter") + 
+  geom_tech(size=0.15, theme="twitter") + 
   theme_tech("twitter") +
   ggtitle("Twitter geom")
 ```
