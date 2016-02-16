@@ -37,6 +37,8 @@ d <- qplot(carat, data = diamonds[diamonds$color %in%LETTERS[4:7], ], geom = "hi
 ```
 
 
+Tech themes and scales:
+
 ```{r}
 d + theme_tech(theme="airbnb") + ggtitle("Airbnb ggplot2 theme") + scale_fill_tech(theme="airbnb")
 ```
@@ -64,6 +66,52 @@ d + theme_tech(theme="twitter") + ggtitle("Twitter ggplot2 theme") + scale_fill_
 ```
 
 
+
+Tech geoms, inspired by [emoGG](https://github.com/dill/emoGG).
+
+
+```{r}
+d2 <- data.frame(x = c(1:4, 3:1), y=1:7)
+```
+
+
+```{r}
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="airbnb") + 
+  theme_tech("airbnb") +
+  ggtitle("Airbnb geom")
+```
+
+
+```{r}
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="etsy") + 
+  theme_tech("etsy")+
+  ggtitle("Etsy geom")
+```
+
+```{r}
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="facebook") + 
+  theme_tech("facebook")+
+  ggtitle("Facebook geom")
+```
+
+
+```{r}
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="google") + 
+  theme_tech("google" ) +
+  ggtitle("Google geom")
+```
+
+
+```{r}
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="twitter") + 
+  theme_tech("twitter") +
+  ggtitle("Twitter geom")
+```
 
 
 

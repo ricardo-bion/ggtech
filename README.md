@@ -23,6 +23,8 @@ d <- qplot(carat, data = diamonds[diamonds$color %in%LETTERS[4:7], ], geom = "hi
 ```
 
 
+Tech themes and scales:
+
 
 ```r
 d + theme_tech(theme="airbnb") + ggtitle("Airbnb ggplot2 theme") + scale_fill_tech(theme="airbnb")
@@ -65,6 +67,68 @@ d + theme_tech(theme="twitter") + ggtitle("Twitter ggplot2 theme") + scale_fill_
 ![](README_files/figure-html/unnamed-chunk-7-1.png)
 
 
+
+Tech geoms, inspired by [emoGG](https://github.com/dill/emoGG).
+
+
+
+```r
+d2 <- data.frame(x = c(1:4, 3:1), y=1:7)
+```
+
+
+
+```r
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="airbnb") + 
+  theme_tech("airbnb") +
+  ggtitle("Airbnb geom")
+```
+
+![](README_files/figure-html/unnamed-chunk-9-1.png)
+
+
+
+```r
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="etsy") + 
+  theme_tech("etsy")+
+  ggtitle("Etsy geom")
+```
+
+![](README_files/figure-html/unnamed-chunk-10-1.png)
+
+
+```r
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="facebook") + 
+  theme_tech("facebook")+
+  ggtitle("Facebook geom")
+```
+
+![](README_files/figure-html/unnamed-chunk-11-1.png)
+
+
+
+```r
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="google") + 
+  theme_tech("google" ) +
+  ggtitle("Google geom")
+```
+
+![](README_files/figure-html/unnamed-chunk-12-1.png)
+
+
+
+```r
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.1, theme="twitter") + 
+  theme_tech("twitter") +
+  ggtitle("Twitter geom")
+```
+
+![](README_files/figure-html/unnamed-chunk-13-1.png)
 
 
 
