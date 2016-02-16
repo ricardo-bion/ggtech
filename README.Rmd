@@ -130,9 +130,9 @@ font_import(pattern = 'Lucida', prompt=FALSE)
 
 
 ## Google 
-download.file("http://social-fonts.com/assets/fonts/catull/catull.ttf", "/Library/Fonts/catull.ttf", method="curl")
+download.file("http://social-fonts.com/assets/fonts/product-sans/product-sans.ttf", "/Library/Fonts/product-sans.ttf", method="curl")
 
-font_import(pattern = 'catull.ttf', prompt=FALSE)
+font_import(pattern = 'product-sans.ttf', prompt=FALSE)
 font_import(pattern = 'Roboto', prompt=FALSE)
 
 
