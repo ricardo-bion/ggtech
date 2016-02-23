@@ -17,3 +17,4 @@ Imports:
     tidyr,
     extrafont,
     extrafontdb
+RoxygenNote: 5.0.1

@@ -6,15 +6,13 @@
 
 # most of the code is from emoGG https://github.com/dill/emoGG
 
-techGrob <- function(x, y, size, theme){
-
-   geom_key <- list(
+techGrob <- function(x, y, size, theme, geom_key = list(
     airbnb = "http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png",
     etsy = "https://d3rnbxvnd0hlox.cloudfront.net/images/channels/64/icons/large.png",
     facebook = "http://blog.icracked.com/wp-content/uploads/2015/03/facebook-icon.png",
     twitter = "https://lh3.ggpht.com/lSLM0xhCA1RZOwaQcjhlwmsvaIQYaP3c5qbDKCgLALhydrgExnaSKZdGa8S3YtRuVA=w300",
     google = "http://logok.org/wp-content/uploads/2015/09/Google-logo-2015-G-icon.png"
-    )
+    )) {
    
    img <- as.raster(png::readPNG(RCurl::getURLContent(geom_key[[theme[[1]]]])))
 

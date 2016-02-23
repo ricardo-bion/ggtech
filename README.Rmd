@@ -122,18 +122,18 @@ You have to install the necessary fonts manually before using `ggtech`. Mofidy t
 
 ```{r, eval=FALSE}
 
+library(extrafont)
+
 ## Facebook 
 download.file("http://social-fonts.com/assets/fonts/facebook-letter-faces/facebook-letter-faces.ttf", "/Library/Fonts/facebook-letter-faces.ttf", method="curl")
 
 font_import(pattern = 'facebook-letter-faces.ttf', prompt=FALSE)
-font_import(pattern = 'Lucida', prompt=FALSE)
 
 
 ## Google 
 download.file("http://social-fonts.com/assets/fonts/product-sans/product-sans.ttf", "/Library/Fonts/product-sans.ttf", method="curl")
 
 font_import(pattern = 'product-sans.ttf', prompt=FALSE)
-font_import(pattern = 'Roboto', prompt=FALSE)
 
 
 ## Airbnb 

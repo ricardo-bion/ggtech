@@ -9,9 +9,7 @@
 #' @examples
 #' theme_tech(theme="etsy")
 
-theme_tech <- function(theme="airbnb") {
-  
-  tech_key <- list(
+theme_tech <- function(theme="airbnb", tech_key = list(
                   airbnb = list(
                     family_title="Circular Air Bold"
                     , family_text = "Circular Air Medium"
@@ -19,17 +17,17 @@ theme_tech <- function(theme="airbnb") {
                     , colour_text = "#535353"),
                   facebook = list(
                     family_title="Facebook Letter Faces"
-                    , family_text = "Lucida Grande"
+                    , family_text = "Facebook Letter Faces"
                     , colour_title = "#3D579D"
-                    , colour_text = "black"),
+                    , colour_text = "#535353"),
                   google = list(
                     family_title="Product Sans"
-                    , family_text = "Roboto"
+                    , family_text = "Product Sans"
                     , colour_title = "#dd4b39"
                     , colour_text = "black"),
                   etsy = list(
-                    family_title="Guardian EgypTT Regular"
-                    , family_text = "Guardian EgypTT Regular"
+                    family_title="."
+                    , family_text = "."
                     , colour_title = "#F14000"
                     , colour_text = "#535353"),
                   twitter = list(
@@ -37,7 +35,7 @@ theme_tech <- function(theme="airbnb") {
                     , family_text = "[z] Arista Light"
                     , colour_title = "#5380E4"
                     , colour_text = "black")
-                    )
+                    )) {
 
   theme_classic() + 
     theme(text=element_text(size=20, family=tech_key[[theme]]$family_text)) +
