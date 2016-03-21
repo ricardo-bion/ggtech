@@ -27,16 +27,20 @@ Tech themes and scales:
 
 
 ```r
-d + theme_tech(theme="airbnb") + ggtitle("Airbnb ggplot2 theme") + scale_fill_tech(theme="airbnb")
+d + theme_tech(theme="airbnb") + 
+  scale_fill_tech(theme="airbnb") + 
+  labs(title="Airbnb theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
 ```
 
 ![](README_files/figure-html/unnamed-chunk-3-1.png)
 
 
-
-
 ```r
-d + theme_tech(theme="etsy") + ggtitle("Etsy ggplot2 theme") + scale_fill_tech(theme="etsy")
+d + theme_airbnb_fancy() + 
+  scale_fill_tech(theme="airbnb")  + 
+  labs(title="Airbnb theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
 ```
 
 ![](README_files/figure-html/unnamed-chunk-4-1.png)
@@ -45,15 +49,22 @@ d + theme_tech(theme="etsy") + ggtitle("Etsy ggplot2 theme") + scale_fill_tech(t
 
 
 ```r
-d + theme_tech(theme="facebook") + ggtitle("Facebook ggplot2 theme") + scale_fill_tech(theme="facebook")
+d + theme_tech(theme="etsy") + 
+  scale_fill_tech(theme="etsy") + 
+  labs(title="Etsy theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
 ```
 
 ![](README_files/figure-html/unnamed-chunk-5-1.png)
 
 
 
+
 ```r
-d + theme_tech(theme="google") + ggtitle("Google ggplot2 theme") + scale_fill_tech(theme="google")
+d + theme_tech(theme="facebook") +
+  scale_fill_tech(theme="facebook") + 
+  labs(title="Facebook theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
 ```
 
 ![](README_files/figure-html/unnamed-chunk-6-1.png)
@@ -61,10 +72,24 @@ d + theme_tech(theme="google") + ggtitle("Google ggplot2 theme") + scale_fill_te
 
 
 ```r
-d + theme_tech(theme="twitter") + ggtitle("Twitter ggplot2 theme") + scale_fill_tech(theme="twitter")
+d + theme_tech(theme="google") + 
+  scale_fill_tech(theme="google") + 
+  labs(title="Google theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
 ```
 
 ![](README_files/figure-html/unnamed-chunk-7-1.png)
+
+
+
+```r
+d + theme_tech(theme="twitter") + 
+  scale_fill_tech(theme="twitter") + 
+  labs(title="Twitter theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+```
+
+![](README_files/figure-html/unnamed-chunk-8-1.png)
 
 
 
@@ -85,7 +110,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Airbnb geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-9-1.png)
+![](README_files/figure-html/unnamed-chunk-10-1.png)
 
 
 
@@ -96,7 +121,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Etsy geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-10-1.png)
+![](README_files/figure-html/unnamed-chunk-11-1.png)
 
 
 ```r
@@ -106,7 +131,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Facebook geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-11-1.png)
+![](README_files/figure-html/unnamed-chunk-12-1.png)
 
 
 
@@ -117,7 +142,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Google geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-12-1.png)
+![](README_files/figure-html/unnamed-chunk-13-1.png)
 
 
 
@@ -128,7 +153,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Twitter geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-13-1.png)
+![](README_files/figure-html/unnamed-chunk-14-1.png)
 
 
 

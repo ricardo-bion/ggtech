@@ -40,13 +40,21 @@ theme_tech <- function(theme="airbnb", tech_key = list(
   theme_classic() + 
     theme(text=element_text(size=20, family=tech_key[[theme]]$family_text)) +
     theme(legend.title=element_blank()) + 
-    theme(plot.title = element_text(size = 30, colour = tech_key[[theme]]$colour_title, family=tech_key[[theme]]$family_title)) + 
-    theme(plot.subtitle = element_text(size = 10, colour = tech_key[[theme]]$colour_title, family=tech_key[[theme]]$family_title)) + 
+    theme(plot.title = element_text(size = 25, colour = tech_key[[theme]]$colour_title, family=tech_key[[theme]]$family_title)) + 
+    theme(plot.subtitle = element_text(size = 15, colour = tech_key[[theme]]$colour_title, family=tech_key[[theme]]$family_title)) + 
     theme(axis.text.x=element_text(color=tech_key[[theme]]$colour_text)) +
     theme(axis.text.y=element_text(color=tech_key[[theme]]$colour_text)) +
     theme(axis.title.x=element_text(color=tech_key[[theme]]$colour_text, vjust=0)) +
-    theme(axis.title.y=element_text(color=tech_key[[theme]]$colour_text, vjust=1.25))
-
-
+    theme(axis.title.y=element_text(color=tech_key[[theme]]$colour_text, vjust=1.25)) + 
+    theme(plot.background = element_blank(),
+         panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank())+
+    theme(panel.border= element_blank())+
+    theme(axis.line.x = element_line(color=tech_key[[theme]]$colour_text, size = 0.5),
+        axis.line.y = element_line(color=tech_key[[theme]]$colour_text, size = 0.5)) +
+  theme(line = element_line(color=tech_key[[theme]]$colour_text)) +
+  theme(rect = element_rect(color=tech_key[[theme]]$colour_text)) +
+  theme(axis.ticks.x = element_line(color=tech_key[[theme]]$colour_text)) +
+  theme(axis.ticks.y = element_line(color=tech_key[[theme]]$colour_text))
 
 }

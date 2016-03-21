@@ -41,7 +41,7 @@ theme_airbnb_fancy <- function(base_size=2.5) {
 
   # Set title and axis labels, and format these and tick marks
   theme(plot.title=element_text(color=color.title, size=base_size * 10, vjust=1.25)) +
-  theme(plot.subtitle=element_text(color=color.subtitle, size=base_size * 5, vjust=1.25)) +
+  theme(plot.subtitle=element_text(color=color.subtitle, size=base_size * 7.5, vjust=1.25)) +
   theme(axis.text.x=element_text(size=base_size * 7,color=color.axis.text)) +
   theme(axis.text.y=element_text(size=base_size * 7,color=color.axis.text)) +
   theme(axis.title.x=element_text(size=base_size * 8,color=color.axis.title, vjust=0)) +
