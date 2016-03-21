@@ -3,4 +3,5 @@
 export(geom_tech)
 export(scale_fill_tech)
 export(techGrob)
+export(theme_airbnb_fancy)
 export(theme_tech)
