@@ -1,7 +1,7 @@
 ##########
 #' Import Airbnb ggplot2 theme. It builds on theme_classic. You can change font family or size.
 #' 
-#' @export
+#' @export theme_airbnb_fancy
 #' @name theme_airbnb_fancy
 #' @title Airbnb theme for ggplo2
 #' @return A theme element
@@ -9,14 +9,15 @@
 #' qplot(1) + theme_airbnb_fancy()
 ###
 
-theme_airbnb_fancy <- function(base_size=1.5) {
+theme_airbnb_fancy <- function(base_size=2.5) {
 # Generate the colors for the chart procedurally with RColorBrewer
   palette <- RColorBrewer::brewer.pal("Greys", n=9)
   color.background = palette[2]
   color.grid.major = palette[3]
   color.axis.text = palette[6]
   color.axis.title = palette[7]
-  color.title = palette[9]
+  color.title = "#F14000"
+  color.subtitle = "#F14000"
 
   # Begin construction of chart
   theme_bw(base_size= base_size * 9) +
@@ -40,6 +41,7 @@ theme_airbnb_fancy <- function(base_size=1.5) {
 
   # Set title and axis labels, and format these and tick marks
   theme(plot.title=element_text(color=color.title, size=base_size * 10, vjust=1.25)) +
+  theme(plot.subtitle=element_text(color=color.subtitle, size=base_size * 5, vjust=1.25)) +
   theme(axis.text.x=element_text(size=base_size * 7,color=color.axis.text)) +
   theme(axis.text.y=element_text(size=base_size * 7,color=color.axis.text)) +
   theme(axis.title.x=element_text(size=base_size * 8,color=color.axis.title, vjust=0)) +
