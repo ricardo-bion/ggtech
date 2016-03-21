@@ -38,7 +38,7 @@ theme_tech <- function(theme="airbnb", tech_key = list(
                     )) {
 
   theme_classic() + 
-    theme(text=element_text(size=20, family=tech_key[[theme]]$family_text)) +
+    theme(text=element_text(size=18, family=tech_key[[theme]]$family_text)) +
     theme(legend.title=element_blank()) + 
     theme(plot.title = element_text(size = 25, colour = tech_key[[theme]]$colour_title, family=tech_key[[theme]]$family_title)) + 
     theme(plot.subtitle = element_text(size = 15, colour = tech_key[[theme]]$colour_title, family=tech_key[[theme]]$family_title)) + 

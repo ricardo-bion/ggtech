@@ -40,15 +40,16 @@ theme_airbnb_fancy <- function(base_size=2.5) {
   theme(legend.title=element_blank()) + 
 
   # Set title and axis labels, and format these and tick marks
-  theme(plot.title=element_text(color=color.title, size=base_size * 10, vjust=1.25)) +
-  theme(plot.subtitle=element_text(color=color.subtitle, size=base_size * 7.5, vjust=1.25)) +
-  theme(axis.text.x=element_text(size=base_size * 7,color=color.axis.text)) +
-  theme(axis.text.y=element_text(size=base_size * 7,color=color.axis.text)) +
-  theme(axis.title.x=element_text(size=base_size * 8,color=color.axis.title, vjust=0)) +
-  theme(axis.title.y=element_text(size=base_size * 8,color=color.axis.title, vjust=1.25)) +
+  theme(plot.subtitle=element_text(color=color.subtitle, size=15, vjust=1.25)) +
+  theme(axis.text.x=element_text(size=base_size * 6,color=color.axis.text)) +
+  theme(axis.text.y=element_text(size=base_size * 6,color=color.axis.text)) +
+  theme(axis.title.x=element_text(size=base_size * 7,color=color.axis.title, vjust=0)) +
+  theme(axis.title.y=element_text(size=base_size * 7,color=color.axis.title, vjust=1.25)) +
 
   # Plot margins
   theme(plot.margin = grid::unit(c(0.35, 0.2, 0.3, 0.35), "cm")) + 
-  theme(text=element_text(size=base_size*9, family="Circular Air Medium"))
+  theme(text=element_text(size=base_size*9, family="Circular Air Medium")) +
+  theme(plot.title=element_text(color=color.title, size=25, vjust=1.25, family="Circular Air Bold"))
+
 
 }

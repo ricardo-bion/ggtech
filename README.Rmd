@@ -36,6 +36,7 @@ library(ggtech)
 
 d <- qplot(carat, data = diamonds[diamonds$color %in%LETTERS[4:7], ], geom = "histogram", bins=30, fill = color)
 
+
 ```
 
 
