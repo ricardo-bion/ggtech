@@ -19,4 +19,3 @@ scale_fill_tech(theme="etsy")
 \author{
 Ricardo Bion
 }
-

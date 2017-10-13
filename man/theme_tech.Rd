@@ -24,4 +24,3 @@ theme_tech(theme="etsy")
 \author{
 Ricardo Bion
 }
-

@@ -2,8 +2,8 @@ Repository: CRAN_ggtech
 Package: ggtech
 Type: Package
 Title: ggplot2 tech themes and scales
-Version: 0.1
-Date: 2016-02-06
+Version: 0.1.1
+Date: 2017-10-13
 Author: Ricardo Bion
 Maintainer: Ricardo Bion <ricardo.bion@airbnb.com>
 Description: ggplot2 tech themes and scales
@@ -17,4 +17,4 @@ Imports:
     tidyr,
     extrafont,
     extrafontdb
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
