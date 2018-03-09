@@ -102,7 +102,14 @@ d + theme_tech(theme="twitter") +
 
 ```
 
+```{r}
 
+d + theme_tech(theme="X23andme") + 
+  scale_fill_tech(theme="X23andme") + 
+  labs(title="23andme theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+
+```
 
 Tech geoms, inspired by [emoGG](https://github.com/dill/emoGG).
 
@@ -150,7 +157,12 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Twitter geom")
 ```
 
-
+```{r}
+ggplot(aes(x,y), data=d2) + 
+  geom_tech(size=0.15, theme="X23andme") + 
+  theme_tech("X23andme") +
+  ggtitle("23andme geom")
+```
 
 ### Install fonts:
 

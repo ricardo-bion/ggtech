@@ -9,11 +9,13 @@ techGrob(x, y, size, theme, geom_key = list(airbnb =
   etsy =
   "https://d3rnbxvnd0hlox.cloudfront.net/images/channels/64/icons/large.png",
   facebook =
-  "http://blog.icracked.com/wp-content/uploads/2015/03/facebook-icon.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1000px-F_icon.svg.png",
   twitter =
   "https://lh3.ggpht.com/lSLM0xhCA1RZOwaQcjhlwmsvaIQYaP3c5qbDKCgLALhydrgExnaSKZdGa8S3YtRuVA=w300",
   google =
-  "http://logok.org/wp-content/uploads/2015/09/Google-logo-2015-G-icon.png"))
+  "http://logok.org/wp-content/uploads/2015/09/Google-logo-2015-G-icon.png",
+  X23andme =
+  "https://www.23andme.com/static/img/logos/meta_logo.5f584d06594e.png"))
 }
 \description{
 Tech geom
@@ -21,4 +23,3 @@ Tech geom
 \author{
 Ricardo Bion
 }
-

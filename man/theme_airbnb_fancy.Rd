@@ -15,4 +15,3 @@ Import Airbnb ggplot2 theme. It builds on theme_classic. You can change font fam
 \examples{
 qplot(1) + theme_airbnb_fancy()
 }
-

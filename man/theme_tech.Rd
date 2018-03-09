@@ -5,15 +5,16 @@
 \title{Tech themes  for ggplot2}
 \usage{
 theme_tech(theme = "airbnb", tech_key = list(airbnb = list(family_title =
-  "Circular Air Bold", family_text = "Circular Air Medium", colour_title =
-  "#F14000", colour_text = "#535353"), facebook = list(family_title =
-  "Facebook Letter Faces", family_text = "Facebook Letter Faces", colour_title =
-  "#3D579D", colour_text = "#535353"), google = list(family_title =
-  "Product Sans", family_text = "Product Sans", colour_title = "#dd4b39",
-  colour_text = "black"), etsy = list(family_title = ".", family_text = ".",
-  colour_title = "#F14000", colour_text = "#535353"),      twitter =
-  list(family_title = "PicoBlackAl", family_text = "[z] Arista Light",
-  colour_title = "#5380E4", colour_text = "black")))
+  ".", family_text = ".", colour_title = "#F14000", colour_text = "#535353"),
+  facebook = list(family_title = "Facebook Letter Faces", family_text =
+  "Facebook Letter Faces", colour_title = "#3D579D", colour_text = "#535353"),
+  google = list(family_title = "Product Sans", family_text = "Product Sans",
+  colour_title = "#dd4b39", colour_text = "black"), etsy = list(family_title =
+  ".", family_text = ".", colour_title = "#F14000", colour_text = "#535353"),
+  twitter = list(family_title = "PicoBlackAl",      family_text =
+  "[z] Arista Light", colour_title = "#5380E4", colour_text = "black"), X23andme
+  = list(family_title = "Helvetica Neue Bold", family_text = ".", colour_title =
+  "#7BC143", colour_text = "#DA1963")))
 }
 \description{
 tech theme
@@ -24,4 +25,3 @@ theme_tech(theme="etsy")
 \author{
 Ricardo Bion
 }
-
