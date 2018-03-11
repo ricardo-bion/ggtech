@@ -10,16 +10,16 @@
 #' theme_tech(theme="etsy")
 
 theme_tech <- function(theme="airbnb", tech_key = list(
-                  # airbnb = list(
-                  #   family_title="Circular Air Bold"
-                  #   , family_text = "Circular Air Medium"
-                  #   , colour_title = "#F14000"
-                  #   , colour_text = "#535353"),
                   airbnb = list(
-                    family_title="."
-                    , family_text = "."
+                    family_title="Circular Air Bold"
+                    , family_text = "Circular Air Medium"
                     , colour_title = "#F14000"
                     , colour_text = "#535353"),
+                  # airbnb = list(
+                  #   family_title="Arial"
+                  #   , family_text = "Arial"
+                  #   , colour_title = "#F14000"
+                  #   , colour_text = "#535353"),
                   facebook = list(
                     family_title="Facebook Letter Faces"
                     , family_text = "Facebook Letter Faces"
@@ -31,8 +31,8 @@ theme_tech <- function(theme="airbnb", tech_key = list(
                     , colour_title = "#dd4b39"
                     , colour_text = "black"),
                   etsy = list(
-                    family_title="."
-                    , family_text = "."
+                    family_title="Georgia"
+                    , family_text = "Georgia"
                     , colour_title = "#F14000"
                     , colour_text = "#535353"),
                   twitter = list(
@@ -42,7 +42,7 @@ theme_tech <- function(theme="airbnb", tech_key = list(
                     , colour_text = "black"),
                   X23andme = list(
                     family_title = "Helvetica Neue Bold"
-                    , family_text = "."
+                    , family_text = "Helvetica"
                     , colour_title = "#7BC143"
                     , colour_text = "#DA1963"
                   )
