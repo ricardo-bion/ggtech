@@ -15,11 +15,6 @@ theme_tech <- function(theme="airbnb", tech_key = list(
                     , family_text = "Circular Air Medium"
                     , colour_title = "#F14000"
                     , colour_text = "#535353"),
-                  # airbnb = list(
-                  #   family_title="Arial"
-                  #   , family_text = "Arial"
-                  #   , colour_title = "#F14000"
-                  #   , colour_text = "#535353"),
                   facebook = list(
                     family_title="Facebook Letter Faces"
                     , family_text = "Facebook Letter Faces"
