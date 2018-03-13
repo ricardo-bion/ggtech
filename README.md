@@ -108,6 +108,94 @@ d + theme_tech(theme="X23andme") +
 
 ![](README_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
+Tech color scales:
+
+
+```r
+data("iris")
+
+d1 <- qplot(x  = Sepal.Length, y =Sepal.Width,colour = Species,data = iris,geom = "point")
+```
+
+
+```r
+d1 + theme_tech(theme="airbnb") + 
+  scale_color_tech(theme="airbnb") + 
+  labs(title="Airbnb theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+```
+
+![](README_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+
+
+```r
+d1 + theme_airbnb_fancy() + 
+  scale_color_tech(theme="airbnb")  + 
+  labs(title="Airbnb theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+```
+
+![](README_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+
+
+
+
+```r
+d1 + theme_tech(theme="etsy") + 
+  scale_color_tech(theme="etsy") + 
+  labs(title="Etsy theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+```
+
+![](README_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+
+
+
+
+```r
+d1 + theme_tech(theme="facebook") +
+  scale_color_tech(theme="facebook") + 
+  labs(title="Facebook theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+```
+
+![](README_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+
+
+
+```r
+d1 + theme_tech(theme="google") + 
+  scale_color_tech(theme="google") + 
+  labs(title="Google theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+```
+
+![](README_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+
+
+
+```r
+d1 + theme_tech(theme="twitter") + 
+  scale_color_tech(theme="twitter") + 
+  labs(title="Twitter theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+```
+
+![](README_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+
+
+```r
+d1 + theme_tech(theme="X23andme") + 
+  scale_color_tech(theme="X23andme") + 
+  labs(title="23andme theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+```
+
+![](README_files/figure-html/unnamed-chunk-17-1.png)<!-- -->
+
+
+
+
 Tech geoms, inspired by [emoGG](https://github.com/dill/emoGG).
 
 
@@ -125,7 +213,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Airbnb geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-19-1.png)<!-- -->
 
 
 
@@ -136,7 +224,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Etsy geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-20-1.png)<!-- -->
 
 
 ```r
@@ -146,7 +234,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Facebook geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-21-1.png)<!-- -->
 
 
 
@@ -157,7 +245,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Google geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-22-1.png)<!-- -->
 
 
 
@@ -168,7 +256,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("Twitter geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-23-1.png)<!-- -->
 
 
 ```r
@@ -178,7 +266,7 @@ ggplot(aes(x,y), data=d2) +
   ggtitle("23andme geom")
 ```
 
-![](README_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-24-1.png)<!-- -->
 
 ### Install fonts:
 

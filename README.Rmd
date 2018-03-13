@@ -111,6 +111,88 @@ d + theme_tech(theme="X23andme") +
 
 ```
 
+Tech color scales:
+
+```{r}
+
+data("iris")
+
+d1 <- qplot(x  = Sepal.Length, y =Sepal.Width,colour = Species,data = iris,geom = "point")
+
+```
+
+```{r}
+
+d1 + theme_tech(theme="airbnb") + 
+  scale_color_tech(theme="airbnb") + 
+  labs(title="Airbnb theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+
+```
+
+```{r}
+
+d1 + theme_airbnb_fancy() + 
+  scale_color_tech(theme="airbnb")  + 
+  labs(title="Airbnb theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+
+```
+
+
+
+```{r}
+
+d1 + theme_tech(theme="etsy") + 
+  scale_color_tech(theme="etsy") + 
+  labs(title="Etsy theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+
+```
+
+
+
+```{r}
+
+d1 + theme_tech(theme="facebook") +
+  scale_color_tech(theme="facebook") + 
+  labs(title="Facebook theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+
+```
+
+
+```{r}
+
+d1 + theme_tech(theme="google") + 
+  scale_color_tech(theme="google") + 
+  labs(title="Google theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+
+```
+
+
+```{r}
+
+d1 + theme_tech(theme="twitter") + 
+  scale_color_tech(theme="twitter") + 
+  labs(title="Twitter theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+
+```
+
+```{r}
+
+d1 + theme_tech(theme="X23andme") + 
+  scale_color_tech(theme="X23andme") + 
+  labs(title="23andme theme", 
+       subtitle="now with subtitles for ggplot2 >= 2.1.0")
+
+```
+
+
+
+
 Tech geoms, inspired by [emoGG](https://github.com/dill/emoGG).
 
 
