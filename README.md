@@ -40,6 +40,8 @@ d + theme_tech(theme="airbnb") +
        subtitle="now with subtitles for ggplot2 >= 2.1.0")
 ```
 
+![](README_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+
 
 ```r
 d + theme_airbnb_fancy() + 
@@ -47,6 +49,8 @@ d + theme_airbnb_fancy() +
   labs(title="Airbnb theme", 
        subtitle="now with subtitles for ggplot2 >= 2.1.0")
 ```
+
+![](README_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 
 
