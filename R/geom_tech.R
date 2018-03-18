@@ -9,9 +9,9 @@ techGrob <- function(x, y, size, theme, geom_key = list(
   etsy = "https://d3rnbxvnd0hlox.cloudfront.net/images/channels/64/icons/large.png",
   facebook = "http://logok.org/wp-content/uploads/2014/10/Facebook-logo-f.png",
   twitter = "http://logok.org/wp-content/uploads/2014/08/Twitter-logo-bird_logo_2012-1024x768.png",
-  google = "http://logok.org/wp-content/uploads/2015/09/Google-logo-2015-G-icon.png"
+  google = "http://logok.org/wp-content/uploads/2015/09/Google-logo-2015-G-icon.png",
+  X23andme = "https://www.23andme.com/static/img/logos/meta_logo.5f584d06594e.png"
 )) {
-
   img <- as.raster(png::readPNG(RCurl::getURLContent(geom_key[[theme[[1]]]])))
 
   grid::rasterGrob(x             = x,

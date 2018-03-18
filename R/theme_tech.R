@@ -26,15 +26,21 @@ theme_tech <- function(theme="airbnb", tech_key = list(
                     , colour_title = "#dd4b39"
                     , colour_text = "black"),
                   etsy = list(
-                    family_title="."
-                    , family_text = "."
+                    family_title="Georgia"
+                    , family_text = "Georgia"
                     , colour_title = "#F14000"
                     , colour_text = "#535353"),
                   twitter = list(
                     family_title="PicoBlackAl"
                     , family_text = "[z] Arista Light"
                     , colour_title = "#5380E4"
-                    , colour_text = "black")
+                    , colour_text = "black"),
+                  X23andme = list(
+                    family_title = "Helvetica Neue Bold"
+                    , family_text = "Helvetica"
+                    , colour_title = "#7BC143"
+                    , colour_text = "#DA1963"
+                  )
                     )) {
 
   theme_classic() + 

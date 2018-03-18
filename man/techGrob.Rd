@@ -12,7 +12,9 @@ techGrob(x, y, size, theme, geom_key = list(airbnb =
   twitter =
   "http://logok.org/wp-content/uploads/2014/08/Twitter-logo-bird_logo_2012-1024x768.png",
   google =
-  "http://logok.org/wp-content/uploads/2015/09/Google-logo-2015-G-icon.png"))
+  "http://logok.org/wp-content/uploads/2015/09/Google-logo-2015-G-icon.png",
+  X23andme =
+  "https://www.23andme.com/static/img/logos/meta_logo.5f584d06594e.png"))
 }
 \description{
 most of the code is from emoGG https://github.com/dill/emoGG
