@@ -2,8 +2,8 @@ Repository: CRAN_ggtech
 Package: ggtech
 Type: Package
 Title: ggplot2 tech themes and scales
-Version: 0.1
-Date: 2016-02-06
+Version: 0.1.1
+Date: 2018-03-18
 Author: Ricardo Bion
 Maintainer: Ricardo Bion <ricardo.bion@airbnb.com>
 Description: ggplot2 tech themes and scales
